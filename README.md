@@ -1,3 +1,5 @@
+## `App is runing there:` [Click To See]( https://genesis-algorithms.github.io/react-thinking/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
