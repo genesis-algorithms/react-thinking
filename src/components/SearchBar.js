@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { thisExpression } from '@babel/types';
 
 const StyledSearchBar = styled.form`
   border: 2px solid #fab57a;

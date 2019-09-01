@@ -22,7 +22,6 @@ export default class FilterableProductTable extends React.Component {
   }
 
   handleFilterTextChange(filterText) {
-    console.log(filterText);
     this.setState({
       filterText: filterText
     });
