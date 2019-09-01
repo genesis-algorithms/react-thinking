@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.c68bb04b.chunk.js",
-    "main.js.map": "/static/js/main.c68bb04b.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.8c62abe6.js",
-    "runtime~main.js.map": "/static/js/runtime~main.8c62abe6.js.map",
-    "static/js/2.8c8872cd.chunk.js": "/static/js/2.8c8872cd.chunk.js",
-    "static/js/2.8c8872cd.chunk.js.map": "/static/js/2.8c8872cd.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b8eaa8f5549119ac0012c067de7e6a46.js": "/precache-manifest.b8eaa8f5549119ac0012c067de7e6a46.js",
-    "service-worker.js": "/service-worker.js"
+    "main.js": "/react-thinking/./static/js/main.bdd65b06.chunk.js",
+    "main.js.map": "/react-thinking/./static/js/main.bdd65b06.chunk.js.map",
+    "runtime~main.js": "/react-thinking/./static/js/runtime~main.1375912e.js",
+    "runtime~main.js.map": "/react-thinking/./static/js/runtime~main.1375912e.js.map",
+    "static/js/2.37f19f36.chunk.js": "/react-thinking/./static/js/2.37f19f36.chunk.js",
+    "static/js/2.37f19f36.chunk.js.map": "/react-thinking/./static/js/2.37f19f36.chunk.js.map",
+    "index.html": "/react-thinking/./index.html",
+    "precache-manifest.2b34b6c872d4fe02fc9faf80b8579c89.js": "/react-thinking/./precache-manifest.2b34b6c872d4fe02fc9faf80b8579c89.js",
+    "service-worker.js": "/react-thinking/./service-worker.js"
   }
 }
