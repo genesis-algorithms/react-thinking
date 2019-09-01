@@ -12,7 +12,7 @@ const Table = styled.table`
 
 const Th = styled.th`
   text-align: left;
-  width: 150px;
+  width: 140px;
 `;
 
 export default class ProductTable extends React.Component {
