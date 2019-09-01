@@ -12,10 +12,15 @@ const Table = styled.table`
 
 export default class ProductTable extends React.Component {
   render() {
+    const filterText = this.props.filterText;
+    const inStockOnly = this.props.inStockOnly;
+
     let rows = [];
     let lastCategory = null;
 
     this.props.products.forEach(product => {
+      if (inStockOnly && !product.stocked) 
+        return;
       if (product.category !== lastCategory ) {
         rows.push(
           <ProductCategoryRow

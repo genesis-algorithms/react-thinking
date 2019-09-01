@@ -16,11 +16,21 @@ const TextInput = styled.input`
 
 export default class SearchBar extends React.Component {
   render() {
+    const filterText = this.props.filterText;
+    const inStockOnly = this.props.inStockOnly;
+
     return (
       <StyledSearchBar>
-        <TextInput type='text' placeholder='Search...' />
+        <TextInput
+          type='text'
+          placeholder='Search...'
+          value={filterText}
+        />
         <label>
-          <input type='checkbox'/>
+          <input
+            type='checkbox'
+            checked={inStockOnly}
+          />
           {' '}Only show products in stock
         </label>
       </StyledSearchBar>
