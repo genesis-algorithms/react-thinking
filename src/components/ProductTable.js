@@ -10,6 +10,11 @@ const Table = styled.table`
   position: relative;
 `;
 
+const Th = styled.th`
+  text-align: left;
+  width: 150px;
+`;
+
 export default class ProductTable extends React.Component {
   render() {
     const filterText = this.props.filterText;
@@ -19,8 +24,8 @@ export default class ProductTable extends React.Component {
     let lastCategory = null;
 
     this.props.products.forEach(product => {
-      if (inStockOnly && !product.stocked) 
-        return;
+      if (inStockOnly && !product.stocked) return;
+      if (product.name.indexOf(filterText) === -1) return;
       if (product.category !== lastCategory ) {
         rows.push(
           <ProductCategoryRow
@@ -42,8 +47,8 @@ export default class ProductTable extends React.Component {
       <Table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Price</th>
+            <Th>Name</Th>
+            <Th>Price</Th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>

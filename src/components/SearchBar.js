@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { thisExpression } from '@babel/types';
 
 const StyledSearchBar = styled.form`
   border: 2px solid #fab57a;
@@ -13,8 +14,21 @@ const TextInput = styled.input`
   width: 220px;
 `;
 
-
 export default class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
+    this.handleInStockChange = this.handleInStockChange.bind(this);
+  }
+
+  handleFilterTextChange(e) {
+    this.props.onFilterTextChange(e.target.value);
+  }
+
+  handleInStockChange(e) {
+    this.props.onInStockChange(e.target.checked);
+  }
+
   render() {
     const filterText = this.props.filterText;
     const inStockOnly = this.props.inStockOnly;
@@ -25,11 +39,13 @@ export default class SearchBar extends React.Component {
           type='text'
           placeholder='Search...'
           value={filterText}
+          onChange={this.handleFilterTextChange}
         />
         <label>
           <input
             type='checkbox'
             checked={inStockOnly}
+            onChange={this.handleInStockChange}
           />
           {' '}Only show products in stock
         </label>

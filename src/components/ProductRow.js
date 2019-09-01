@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Td = styled.td`
   border-bottom: 2px solid #80d6ff;
   border-top: 2px solid #80d6ff;
-  width: 150px;
 `;
 
 export default class ProductRow extends React.Component {
